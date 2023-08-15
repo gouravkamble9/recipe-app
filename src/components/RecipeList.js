@@ -13,6 +13,7 @@ const RecipeList = (props) => {
     fetchData(searchQuery).then((response)=>{
         setData(response)
         props.setLoader(false)
+        console.log(response)
     })
   }
 

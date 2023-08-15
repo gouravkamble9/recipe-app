@@ -1,22 +1,20 @@
-import { useState } from 'react';
 import './App.scss';
-import Header from './components/Header';
-import RecipeList from './components/RecipeList';
-import Tabs from './components/Tabs';
+import Header from './components/Header'
+import Tabs from './components/Tabs'
+import RecipeLists from './components/RecipeList'
+import { useState } from 'react';
 
 function App() {
-  const [loader,setLoader]=useState(false)
-
-
+  const [loader,setLoader] = useState(true)
   return (
-   <div className='main'>
-    <Header/>
-    <Tabs/>
-    <RecipeList setLoader={setLoader}/>
-    {loader && <div className='loader'>
-      <div className='spinner'></div>
-      </div>}
-   </div>
+    <div className="main">
+      <Header />
+      <Tabs setLoader={setLoader}/>
+      <RecipeLists setLoader={setLoader}/>
+      {loader && <div className='loader'>
+        <div className='spinner'></div>
+        </div>}
+    </div>
   );
 }
 

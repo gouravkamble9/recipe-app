@@ -121,7 +121,7 @@ p{
                 border-top: 20px solid #6fcb9f;
                 border-left: 20px solid transparent;
                 border-right: 15px solid transparent;
-                bottom: -20px;
+                bottom: -19px;
             }
         }
 
@@ -177,7 +177,6 @@ p{
                 li{
                     width: calc(50% - 20px);
                     display: flex;
-                    align-items: center;
                     font-size: 18px;
 
                     svg{
