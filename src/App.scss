@@ -172,6 +172,7 @@ p{
     max-height: 80%;
     flex-direction: column-reverse;
     border-radius: 20px;
+    top: -5%;
     @include medium{
         flex-direction: row;
         padding: 60px 40px ;
@@ -419,6 +420,32 @@ p{
     // transform: translateY(0);
     // transition: ease-in 0.5s;
     animation:closeUp linear 0.3s;
+}
+
+
+.footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgba(0,0,0,0.5);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    svg{
+        color: red;
+    }
+
+    span{
+        font-size: 20px;
+        color: white;
+
+       
+    }
+
+
 }
 
 
