@@ -1,8 +1,10 @@
 import React from 'react'
 import {GiCheckMark} from "react-icons/gi"
+import {GoDotFill} from 'react-icons/go'
  
 
 const RecipeBanner = ({tabData,setRecipeTab,recipeListTab,setRecipeListTab}) => {
+
 
   return (
     <div className='recipe_banner'>
@@ -16,7 +18,7 @@ const RecipeBanner = ({tabData,setRecipeTab,recipeListTab,setRecipeListTab}) => 
             <div className='ingredients'>
                 <ul>
                     {tabData.recipe.ingredientLines.map((list,index)=> 
-                        (<li key={index}><GiCheckMark size="18px" color="#6fcb9f" />&nbsp;<span>{list}</span></li>)
+                        (<li key={index}><GoDotFill size="18px" color="#6fcb9f" />&nbsp;<span>{list}</span></li>)
                     )}
                     
                 </ul>

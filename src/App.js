@@ -6,7 +6,7 @@ import { useState } from 'react';
 import RecipeBanner from './components/RecipeBanner';
 
 function App() {
-  const [loader,setLoader] = useState(true)
+  const [loader,setLoader] = useState(false)
 
   return (
     <div className="main">

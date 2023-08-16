@@ -43,9 +43,9 @@ const RecipeList = (props) => {
           onChange={(e)=>setSearchTerm(e.target.value)} 
           type="text" 
           placeholder="Search" 
-          onClick={()=>(searchrecipe(searchTerm))}
+          
           />
-          <button>
+          <button onClick={()=>(searchrecipe(searchTerm),props.setLoader(true))}>
             <BsSearch />
           </button>
         </div>

@@ -12,7 +12,6 @@ const Header = () => {
           </nav>
           <div className='header-text' >
             <h1>Recipe App Reactjs</h1>
-            <p>Let's have fun building this app together...</p>
           </div>
 
         </div>
