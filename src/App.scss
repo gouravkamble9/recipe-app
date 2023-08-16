@@ -79,6 +79,7 @@ p{
     text-align: center;
     font-size: 45px;
     margin-bottom: 70px;
+    margin-top: 20px;
 }
 
 .tabs{
@@ -133,7 +134,17 @@ p{
     padding: 60px 40px;
     color: white;
     display: flex;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
+    position: relative;
+    max-width: 1200px;
+    max-height: 80%;
+
+    .close{
+        position: absolute;
+        top: -30px;
+        right: 0;
+        cursor: pointer;
+    }
 
     .left-col{
         width: 50%;
@@ -268,6 +279,7 @@ p{
             margin-top: 10px;
             img{
                 width: 100%;
+                cursor: pointer;
             }
         }
 

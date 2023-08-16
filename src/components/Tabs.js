@@ -3,6 +3,7 @@ import {CiPizza} from 'react-icons/ci'
 import {GiNoodles,GiFruitBowl,GiCheckMark} from 'react-icons/gi'
 import {MdOutlineIcecream} from 'react-icons/md'
 import {fetchTabData} from '../service'
+import RecipeBanner from './RecipeBanner'
 
 function Tabs({setLoader}) {
     const [active,setActive] = useState('Pizza')
@@ -16,7 +17,7 @@ function Tabs({setLoader}) {
         {
             name: 'Noodles',
             icon:<GiNoodles />,
-            id: 'a243e3cd56da95b31e5a86ef52578908'
+            id: 'e0f06a8d4769e6a9344ff766d04a206f'
         },
         {
             name: 'Desert',
@@ -56,7 +57,7 @@ function Tabs({setLoader}) {
                 </div>
             ))}
         </div>
-        <div className='recipe_banner'>
+        {/* <div className='recipe_banner'>
             {tabData !== '' && tabData.recipe &&  <>
                 <div className="left-col">
                     <span className='badge'>{tabData.recipe?.cuisineType[0].toUpperCase()}</span>
@@ -78,7 +79,9 @@ function Tabs({setLoader}) {
                     </div>
                 </div>
             </>}
-        </div>
+        </div> */}
+
+        <RecipeBanner tabData={tabData}/>
     </div>
   )
 }

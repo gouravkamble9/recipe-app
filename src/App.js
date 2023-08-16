@@ -3,9 +3,11 @@ import Header from './components/Header'
 import Tabs from './components/Tabs'
 import RecipeLists from './components/RecipeList'
 import { useState } from 'react';
+import RecipeBanner from './components/RecipeBanner';
 
 function App() {
   const [loader,setLoader] = useState(true)
+
   return (
     <div className="main">
       <Header />
