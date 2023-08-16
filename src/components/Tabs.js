@@ -12,7 +12,7 @@ function Tabs({setLoader}) {
         {
             name: 'Pizza',
             icon:<CiPizza />,
-            id: '0209cb28fc05320434e2916988f47b71'
+            id: '45cda77c5d4d34861bf4a8971651263f'
         },
         {
             name: 'Noodles',

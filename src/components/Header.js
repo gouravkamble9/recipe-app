@@ -11,7 +11,7 @@ const Header = () => {
             </div>
           </nav>
           <div className='header-text' >
-            <h1>Recipe App Reactjs</h1>
+            <h1>Recipe App</h1>
           </div>
 
         </div>
