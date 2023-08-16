@@ -1,6 +1,7 @@
 import React from 'react'
 import {GiCheckMark} from "react-icons/gi"
 import {GoDotFill} from 'react-icons/go'
+import {IoMdClose} from 'react-icons/io'
  
 
 const RecipeBanner = ({tabData,setRecipeTab,recipeListTab,setRecipeListTab}) => {
@@ -8,7 +9,9 @@ const RecipeBanner = ({tabData,setRecipeTab,recipeListTab,setRecipeListTab}) => 
 
   return (
     <div className='recipe_banner'>
-        {recipeListTab==="yes" ? <div className='close' onClick={()=>(setRecipeTab(false),setRecipeListTab("no"))}>CLOSE</div> :" "}
+        {recipeListTab==="yes" ? <div className='close' onClick={()=>(setRecipeTab(false),setRecipeListTab("no"))}>
+        <IoMdClose/>
+        </div> :" "}
     {tabData !== '' && tabData?.recipe &&  <>
         <div className="left-col">
             <span className='badge'>{tabData?.recipe?.cuisineType[0].toUpperCase()}</span>
