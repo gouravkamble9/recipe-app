@@ -366,10 +366,20 @@ p{
 
         .img-wrapper{
             // margin-top: 10px;
+            overflow: hidden;
+            
             img{
                 width: 100%;
                 cursor: pointer;
+                transition: all ease 0.5s;
+                
+                
+
+                &:hover{
+                    scale: 1.2;
+                }
             }
+            
         }
 
         p{
