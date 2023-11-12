@@ -3,7 +3,6 @@ import Header from './components/Header'
 import Tabs from './components/Tabs'
 import RecipeLists from './components/RecipeList'
 import { useState } from 'react';
-import RecipeBanner from './components/RecipeBanner';
 import Footer from './components/Footer';
 
 function App() {
